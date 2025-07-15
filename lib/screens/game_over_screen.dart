@@ -58,6 +58,18 @@ class GameOverScreen extends StatelessWidget {
               ),
             ),
           ),
+                    ElevatedButton(
+            onPressed: onLeaderboard,
+            style: ElevatedButton.styleFrom(backgroundColor: Colors.orange),
+            child: const Text(
+              'Leaderboard',
+              style: TextStyle(
+                fontSize: 30,
+                fontFamily: 'Pixel',
+                color: Colors.white,
+              ),
+            ),
+          ),
         ],
       ),
     ),
@@ -71,5 +83,10 @@ class GameOverScreen extends StatelessWidget {
   void onDifficulty() {
     game.overlays.remove('gameOver');
     game.overlays.add('chooseDifficulty');
+  }
+
+    void onLeaderboard() {
+    game.overlays.remove('gameOver');
+    game.overlays.add('leaderBoard');
   }
 }

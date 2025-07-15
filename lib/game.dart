@@ -82,10 +82,27 @@ class FlappyBirdGame extends FlameGame with TapDetector, HasCollisionDetection {
     playPointSound();
   }
 
+  void updateLeaderboard() {
+    if (highScore > top1) {
+      leaderboard[3] = leaderboard[2];
+      leaderboard[2] = leaderboard[1];
+      leaderboard[1] = leaderboard[0];
+      leaderboard[0] = 'you: $highScore';
+    } else if (highScore > top2) {
+      leaderboard[3] = leaderboard[2];
+      leaderboard[2] = leaderboard[1];
+      leaderboard[1] = 'you: $highScore';
+    } else if (highScore > top3) {
+      leaderboard[3] = leaderboard[2];
+      leaderboard[2] = 'you: $highScore';
+    }
+  }
+
   bool isGameOver = false;
 
   void gameOver() {
     if (highScore < score) highScore = score;
+    updateLeaderboard();
     if (isGameOver) return;
     playHitSound();
     isGameOver = true;
