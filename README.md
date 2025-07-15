@@ -1,16 +1,13 @@
-# flappy_bird
+# Descrição
 
-A new Flutter project.
+Flappy bird, porém no flutter.
 
-## Getting Started
+# Instruções
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1 - Baixar o projeto compactado.
+2 - Descompactar.
+3 - Abrir no Visual Studio Code.
+4 - Recomendo usar um medium phone com API 36 "Baklava" como VM.
+5 - Umas das dependências do projeto pode causar problemas, o flame_audio. É necessário rodar o seguinte comando no terminal:  
+| start ms-settings:developers | Isso o levara para as configurações de desenvolvedor, onde você tera que ativar o modo desenvolvedor para obter o plugin de áudio necessário.
+6 - Com o áudio funcionando, o projeto já deve funcionar.
