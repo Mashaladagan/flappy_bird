@@ -2,6 +2,10 @@
 
 Flappy bird, porém no flutter.
 
+# Documentação
+
+flappy_bird_doc.pdf na pasta root.
+
 # Instruções
 
 1 - Baixar o projeto compactado.
