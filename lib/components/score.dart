@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 
 class ScoreText extends TextComponent with HasGameRef<FlappyBirdGame> {
   ScoreText() : super(
-    text: '0',
+    text: 'Score: 0',
     textRenderer: TextPaint(
       style: TextStyle(
         color: Colors.white,
@@ -25,7 +25,7 @@ class ScoreText extends TextComponent with HasGameRef<FlappyBirdGame> {
 
   @override
   void update(double dt) {
-    final newText = gameRef.score.toString();
+    final newText = 'Score: ${gameRef.score}';
     if (text != newText) {
       text = newText;
     }

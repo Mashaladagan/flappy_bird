@@ -7,8 +7,10 @@ class ChooseDifficultyscreen extends StatelessWidget {
   final FlappyBirdGame game;
   static const String id = 'chooseDifficulty';
 
-  const ChooseDifficultyscreen({Key? key, required this.game})
-    : super(key: key);
+  const ChooseDifficultyscreen({
+    Key? key,
+    required this.game,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
